@@ -500,9 +500,16 @@ if st.session_state.get("run_analysis", False):
             )
 
             # =================================
-            # DEBUG INFO
+            #CITATION
             # =================================
 
-       
+       st.markdown("""
+        ### 📖 Citation
+        
+        If you use this tool in research, teaching, or academic publications, please cite:
+        
+        Ariyawansha, K. (2026). *Restriction-Enzyme-Analysis-Tool: Initial Release (V1.0)*. Zenodo.
+        https://doi.org/10.5281/zenodo.20460566
+        """)
 
         

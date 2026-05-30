@@ -480,7 +480,10 @@ if st.session_state.get("run_analysis", False):
 
         elements.append(
             Paragraph(
-                "Generated using Restriction Enzyme Analysis Tool v1.0",
+                "Generated using Restriction Enzyme Analysis Tool v1.0<br/>"
+                "Developer: Kalindu Ariyawansha<br/>"
+                "Citation: Ariyawansha, K. (2026). Restriction-Enzyme-Analysis-Tool: Initial Release (V1.0). Zenodo.<br/>"
+                "DOI: 10.5281/zenodo.20460566",
                 styles["Italic"]
             )
         )
@@ -499,4 +502,11 @@ if st.session_state.get("run_analysis", False):
                 mime="application/pdf"
             )
 
-         
+        st.markdown("""
+            ### 📖 Citation
+
+            If you use this tool in research, teaching, or academic publications, please cite:
+
+            Ariyawansha, K. (2026). *Restriction-Enzyme-Analysis-Tool: Initial Release (V1.0)*. Zenodo.
+            https://doi.org/10.5281/zenodo.20460566
+            """)   
